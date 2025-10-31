@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="container">
+            <div>
+                <h3>HOME</h3>
+                <div id="home-score" class="score"></div>
+                <!-- Shot by Free Throw after a foul.-->
+                <button id="home-one" class="one-point" onclick="scoreOneHome()"> +1 </button> 
+                <!-- Shot within three-point line.-->
+                <button id="home-two" class="two-point" onclick="scoreTwoHome()"> +2 </button>
+                <!-- Shot beyond three-point line.-->
+                <button id="home-three" class="three-point" onclick="scoreThreeHome()"> +3 </button>
+
+            </div>
+            <div>
+                <h3>GUEST</h3>
+                <div id="guest-score" class="score"></div>
+                <button id="guest-one" class="one-point" onclick="scoreOneGuest()"> +1 </button>
+                <button id="guest-two" class="two-point" onclick="scoreTwoGuest()"> +2 </button>
+                <button id="guest-three" class="three-point" onclick="scoreThreeGuest()"> +3 </button>
+            </div>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
